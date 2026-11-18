@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Пекарня «Тёплый Хлеб»</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">🥖 Тёплый Хлеб</div>
+    <nav class="nav" id="nav">
+      <a href="#slide1">Главная</a>
+      <a href="#slide2">О нас</a>
+      <a href="#slide3">Ассортимент</a>
+      <a href="#slide4">Закваска</a>
+      <a href="#slide5">Галерея</a>
+      <a href="#slide6">Отзывы</a>
+      <a href="#slide7">Контакты</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main class="slides">
+
+    <section class="slide" id="slide1">
+      <div class="hero">
+        <h1>Пекарня «Тёплый Хлеб»</h1>
+        <p class="subtitle">Хлеб на закваске, круассаны и десерты —<br>печём каждое утро с 6:00</p>
+        <a href="#slide3" class="btn">Смотреть ассортимент</a>
+      </div>
+      <div class="scroll-hint">↓</div>
+    </section>
+
+    <section class="slide" id="slide2">
+      <div class="content reveal">
+        <h2>О нас</h2>
+        <p>Мы — маленькая семейная пекарня. Пятнадцать лет назад бабушка Нина испекла первый каравай, и с тех пор мы печём хлеб так же: руками, на живой закваске и без спешки.</p>
+        <div class="cards">
+          <div class="card"><span>⏰</span><b>С 6:00 утра</b><p>Первая выпадка — к открытию</p></div>
+          <div class="card"><span>🌾</span><b>Живая закваска</b><p>Ей уже 15 лет — как и нам</p></div>
+          <div class="card"><span>🥐</span><b>Всё своё</b><p>От теста до посыпки</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="slide3">
+      <div class="content reveal">
+        <h2>Ассортимент</h2>
+        <div class="cards">
+          <div class="card"><span>🍞</span><b>Хлеб на закваске</b><p>240 ₽ — буханка 800 г</p></div>
+          <div class="card"><span>🥐</span><b>Круассаны</b><p>150 ₽ — классика и с миндалём</p></div>
+          <div class="card"><span>🥖</span><b>Багеты</b><p>120 ₽ — свежие каждые 2 часа</p></div>
+          <div class="card"><span>🍰</span><b>Десерты</b><p>от 200 ₽ — слойки, тарты, эклеры</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="slide4">
+      <div class="content reveal">
+        <h2>Наш секрет — закваска</h2>
+        <p>Никаких дрожжей из пакетика. Наша закваска «живёт» с 2011 года: её кормят дважды в день, и она придаёт хлебу глубокий вкус и хрустящую корку.</p>
+        <ul class="steps">
+          <li>Кормим закваску в 5:00 и 17:00</li>
+          <li>Замешиваем тесто и даём ему отдохнуть 18 часов</li>
+          <li>Формируем руками и выпекаем на камне</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="slide" id="slide5">
+      <div class="content reveal">
+        <h2>Галерея</h2>
+        <div class="gallery">
+          <div class="g-item">🥖</div>
+          <div class="g-item">🥐</div>
+          <div class="g-item">🍞</div>
+          <div class="g-item">🥨</div>
+          <div class="g-item">🍰</div>
+          <div class="g-item">🥯</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="slide6">
+      <div class="content reveal">
+        <h2>Отзывы</h2>
+        <div class="cards">
+          <div class="card"><p>«Багет, как в Париже. Хожу каждое утро»</p><b>— Анна</b></div>
+          <div class="card"><p>«Круассан хрустит так, что слышно соседям»</p><b>— Дмитрий</b></div>
+          <div class="card"><p>«Заказала хлеб на юбилей мамы — все в восторге»</p><b>— Ольга</b></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" id="slide7">
+      <div class="content reveal">
+        <h2>Контакты</h2>
+        <p>📍 ул. Пекарская, 12 — 5 минут от метро</p>
+        <p>📞 <a href="tel:+74990000000">+7 (499) 000-00-00</a></p>
+        <p>✉️ <a href="mailto:hello@hleb.ru">hello@hleb.ru</a></p>
+        <p>🕐 Ежедневно с 6:00 до 21:00</p>
+        <a href="#slide1" class="btn">Наверх ↑</a>
+      </div>
+      <footer class="footer">© <span id="year"></span> Пекарня «Тёплый Хлеб»</footer>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
